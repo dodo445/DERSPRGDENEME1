@@ -66,6 +66,10 @@ public class Event extends LinearLayout {
         {
             mTitle.setText(s.subSequence(0,10) + "...");
         }
+        else
+        {
+            mTitle.setText(s);
+        }
 
 
     }

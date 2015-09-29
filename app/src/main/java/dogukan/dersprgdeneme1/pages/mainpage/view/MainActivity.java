@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.Bind;
@@ -41,6 +42,27 @@ public class MainActivity extends BaseActivity {
         setContentView(R.layout.activity_mainn);
      //
 
+        List<EventModel> pazartesi = new ArrayList<>();
+        List<EventModel> sali = new ArrayList<>();
+        List<EventModel> carsamba = new ArrayList<>();
+        List<EventModel> persembe = new ArrayList<>();
+        List<EventModel> cuma = new ArrayList<>();
+
+        EventModel a = new EventModel();
+        a.setEndTime("20:00");
+        a.setStartTime("19:00");
+        a.setTitle("CE 225");
+
+        pazartesi.add(a);
+
+        EventModel b = new EventModel();
+        b.setEndTime("14:00");
+        b.setStartTime("12:00");
+        b.setTitle("CE 511");
+
+        sali.add(b);
+
+        initialize(pazartesi,sali,carsamba,persembe,cuma);
 
 
     }
