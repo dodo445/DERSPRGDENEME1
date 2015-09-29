@@ -4,7 +4,10 @@ import android.content.Context;
 
 import android.support.annotation.IdRes;
 import android.util.AttributeSet;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 
 import com.devspark.robototextview.widget.RobotoTextView;
 
@@ -13,7 +16,7 @@ import dogukan.dersprgdeneme1.R;
 /**
  * Created by Panch on 29.09.2015.
  */
-public class Event extends FrameLayout {
+public class Event extends LinearLayout {
 
     private RobotoTextView mTitle;
     private RobotoTextView mTime;
@@ -24,10 +27,14 @@ public class Event extends FrameLayout {
         RobotoTextView time = new RobotoTextView(getContext());
         mTitle = title;
         mTime = time;
-        mTitle.setTextColor(getResources().getColor(R.color.md_material_blue_800));
-        mTime.setTextColor(getResources().getColor(R.color.md_material_blue_600));
-        this.addView(title);
-        this.addView(time);
+        mTitle.setLayoutParams(new LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+        mTitle.setTextColor(getResources().getColor(android.R.color.holo_red_dark));
+        mTime.setTextColor(getResources().getColor(android.R.color.darker_gray));
+        this.setOrientation(VERTICAL);
+        this.setBackgroundResource(R.drawable.selector);
+        this.setPadding(8, 8, 8, 8);
+        this.addView(mTitle);
+        this.addView(mTime);
 
     }
 
@@ -53,14 +60,18 @@ public class Event extends FrameLayout {
         initTextviews();
     }
 
-    public void setText(CharSequence s) {
+    public void setTitle(CharSequence s) {
 
-        mTitle.setText(s);
+        if(s.length() >= 10)
+        {
+            mTitle.setText(s.subSequence(0,10) + "...");
+        }
+
 
     }
 
     public void setTime(CharSequence s) {
-        mTitle.setText(s);
+        mTime.setText(s);
     }
 
 }
