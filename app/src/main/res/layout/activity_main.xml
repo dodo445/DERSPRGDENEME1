@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:shrinkColumns="*"
+    android:stretchColumns="*" >
+
+    <TableRow
+        android:id="@+id/schedule_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="6"
+            android:gravity="center"
+            android:text="Schedule"
+            android:textSize="18dp"
+            android:textStyle="bold" >
+        </TextView>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/days_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/empty_section"
+            android:text="" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/text_monday"
+            android:gravity="center"
+            android:text="M"
+            android:textStyle="bold"
+            android:typeface="serif" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/text_tuesday"
+            android:gravity="center"
+            android:text="T"
+            android:textStyle="bold"
+            android:typeface="serif" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/text_wednesday"
+            android:gravity="center"
+            android:text="W"
+            android:textStyle="bold"
+            android:typeface="serif" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/text_thursday"
+            android:gravity="center"
+            android:text="T"
+            android:textStyle="bold"
+            android:typeface="serif" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/text_friday"
+            android:gravity="center"
+            android:text="F"
+            android:textStyle="bold"
+            android:typeface="serif" >
+        </TextView>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/hours_row_9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/hours_9"
+            android:text="9:00"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_monday_9"
+            android:gravity="center_horizontal"
+            android:onClick="section_monday_9_click"
+            android:text="LSN" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_tuesday_9"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_wednesday_9"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_thursday_9"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_friday_9"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/hours_row_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/hours_10"
+            android:text="10:00"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_monday_10"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_tuesday_10"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_wednesday_10"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_thursday_10"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_friday_10"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/hours_11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/hours_row_11"
+            android:textStyle="bold"
+            android:text="11:00" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_monday_11"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_tuesday_11"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_wednesday_11"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_thursday_11"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_friday_11"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/hours_12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/hours_row_12"
+            android:textStyle="bold"
+            android:text="12:00" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_monday_12"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_tuesday_12"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_wednesday_12"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_thursday_12"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_friday_12"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/hours_13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/hours_row_13"
+            android:textStyle="bold"
+            android:text="13:00" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_monday_13"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_tuesday_13"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_wednesday_13"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_thursday_13"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_friday_13"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/hours_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/hours_row_14"
+            android:textStyle="bold"
+            android:text="14:00" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_monday_14"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_tuesday_14"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_wednesday_14"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_thursday_14"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_friday_14"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/hours_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/hours_row_15"
+            android:textStyle="bold"
+            android:text="15:00" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_monday_15"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_tuesday_15"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_wednesday_15"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_thursday_15"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_friday_15"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/hours_16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/hours_row_16"
+            android:textStyle="bold"
+            android:text="16:00" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_monday_16"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_tuesday_16"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_wednesday_16"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_thursday_16"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_friday_16"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/hours_17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/hours_row_17"
+            android:textStyle="bold"
+            android:text="17:00" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_monday_17"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_tuesday_17"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_wednesday_17"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_thursday_17"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_friday_17"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/hours_18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/hours_row_18"
+            android:textStyle="bold"
+            android:text="18:00" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_monday_18"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_tuesday_18"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_wednesday_18"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_thursday_18"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/section_friday_18"
+            android:gravity="center_horizontal"
+            android:text="LSN" >
+        </TextView>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </TableRow>
+
+</TableLayout>
